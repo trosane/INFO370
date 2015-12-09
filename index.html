@@ -36,9 +36,6 @@
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="/index.html">A-Team</a>
             </div>
@@ -61,7 +58,12 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h1>Locating a Reddit User</h1>
-                <p class="lead">stuff</p>
+                <p class="lead">A Data Science Project for INFO 370</p>
+                <img src="/img/project-img.jpg" class="project-image">
+                <h3>What We Did</h3>
+                <p>Reddit is a platform for creating communities where users can post links, comments, images, news stories and more. The site is broken down in to subreddits, which are essentially interest groups that anyone can make. Once content has been submitted to a subreddit, others users can upvote posts they like or that are relevant, or they can downvote posts that do not add to discussion or that they do not like. What makes Reddit unique is that anyone can submit anything. As a result of this, the site has grown hugely over the past couple years, making it the 32nd most visited site globally and the 9th most visited site in the United States.</p>
+                <p>With Reddit being so high in popularity rankings, it naturally attracts traffic from all over the world. A Reddit profile is just a username with a post history. There is no email address required, no biography of the user, and no location. The aim of this project is to see if a user’s time zone can be predicted based on the time of their posting. If there are trends in the time of day that people tend to post to Reddit, it stands to reason that if one looks at the trends in a user’s posting history, one can determine what time zone the user is in.</p>
+                <p>Using Reddit's API, we scraped posts from different city subreddits such as <a href="https://www.reddit.com/r/Seattle/" target="_blank">r/Seattle</a> and <a href="https://www.reddit.com/r/tokyo" target="_blank">r/tokyo</a>. We then graphed the posts by frequency per hour of a day. These graphs revealed different peak times due to the different times of the cities, which we then decided to analyze further. The analysis and results can be read about here.</p>
             </div>
         </div>
         <!-- /.row -->
@@ -74,6 +76,12 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">&copy; 2015</p>
+      </div>
+    </footer>
 
 </body>
 

@@ -1,3 +1,7 @@
+h1 {
+    margin-bottom: 5px;
+}
+
 ul {
     list-style-type: none;
 }
@@ -5,4 +9,42 @@ ul {
 ul li {
     display: inline;
     margin: 0 1em 0 1em;
+}
+
+.profile {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 100px;
+    border: solid 5px rgba(255, 0, 0, .5);
+}
+
+.project-image {
+    width: 100%;
+    max-height: 500px;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container .text-muted {
+  margin: 20px 0;
 }
