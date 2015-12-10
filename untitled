@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>A-Team Data Science Project</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <style>
+    body {
+        padding-top: 70px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                </button>
+                <a class="navbar-brand" href="/index.html">A-Team</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="/about.html">About</a></li>
+                    <li class="active"><a href="#">Data &amp; Analysis</a></li>
+                    <li><a href="/links.html">Links</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="row">
+            <div class="col-lg-12">
+                <h3>The I-Factor</h3>
+                <p>
+                Each city and user is assigned an I-Score. Similar I-Scores suggest that a user resides in the time zone of that city. To come up with the I-Score, we take reddit time-stamps and each hour frequency in its respective slot. If someone posted 5 times at the second UTC hour two then we know the person posted fives times at 2 UTC time.  
+                Next, we calculate the percentage of posts per hour for a day for the data set. Since, people tend to act in patterns or divide their time into allocated slots, in order to account for a single hour getting too much or too little weight we divide the day into 12 2-hour slots. Starting at UTC time 0 so 0 and 1 are together and so on and so forth. Then we add the percentage of the two hour slots that are adjacent to each other together so, slot 1 will combined hour 0 and 1 percent of 5 and 6 percent respectively meaning slot 1 will have a score of 11. After each of the 12 scores are calculated. We multiple the score by its respective slot and divide by 2 to ensure the numbers don’t go to out of control so slow  so slot 1 with a percent score of 11 will produce a score of 11 because 11 times 1 equals 11. If slot 12 had a score of 12 we’d multiple 12 by 12 (slot number) divide by 2 to get a score of 77. After this we sum the scores of every slot to the I-Score. We do this because over time and do the distribution of each time zone relative to the UCT timeline being sufficiently different gives us a basis to give a drastically different score for each time zones, as time zones get closer together their scores get closer and closer together. 
+                </p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted text-right" id="copy">&copy; 2015</p>
+      </div>
+    </footer>
+
+</body>
+
+</html>

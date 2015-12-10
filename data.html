@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>A-Team Data Science Project</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <style>
+    body {
+        padding-top: 70px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                </button>
+                <a class="navbar-brand" href="/trosane/INFO370/index.html">A-Team</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="/trosane/INFO370/about.html">About</a></li>
+                    <li class="active"><a href="#">Data &amp; Analysis</a></li>
+                    <li><a href="/trosane/INFO370/ifactor.html">I-Factor</a></li>
+                    <li><a href="/trosane/INFO370/links.html">Links</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>Data &amp; Analysis</h1>
+                <p class="lead">What Did We Find?</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Data Collection</h3>
+                <p>Our data includes approximately 120,000 user comments, and 4500 timestamps of user submissions.  This data was collected from the Reddit API using Python. Once the timestamps from each submission had been stored, the submissions were revisited, and every comment from the user who created the submission was fetched. A new comment object was created, which was another Python dictionary of username, subreddit, comment text, and the timestamp object of the comment. We used PowerShell to do our data set processing by writing a .ps1 script that could take in the raw data csv and return a new file containing a column with each UTC hour and a respective count of how many times posts were made during that hour. </p>                
+            </div>
+        </div>        
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Data Analysis</h3>
+                <p>Our method for data analysis involved creating preliminary graphs of post frequency for cities in separate time zones. Then, the count of posts per hour were calculated and implemented to create a graph for each city. These graphs acted as our baseline for comparison when we created graphs for individual user post frequency. Our initial theory was that if a user whose post patterns coincided with that of a certain city's, they most likely lived in the same time zone of that city.</p>
+
+                <p>The graphs below show the usage data of one randomly chosen user from each city to depict how we can model a single user and visually match their pattern to a given city to determine where they might be.</p>
+
+                <p>We then tried to determine if different city graphs displayed variances that could be precipitated by obvious factors, such as sleeping and commute times. Below are three graphs of different cities in different time zones: Seattle, Shanghai, China and Tokyo. These graphs show posts during a day in each city.</p>
+
+                <p>Looking at these graphs, one can see that a common trend exists for cities worldwide. By acknowledging this, it can be said that it would be possible to compare a users individual posting graph with a city's time zone adjusted graph.</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted text-right" id="copy">&copy; 2015</p>
+      </div>
+    </footer>
+
+</body>
+
+</html>

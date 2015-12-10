@@ -1,5 +1,19 @@
-h1 {
-    margin-bottom: 5px;
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+@import url(https://fonts.googleapis.com/css?family=Istok+Web);
+
+body {
+  font-family: 'Istok Web', sans-serif;
+}
+
+h1, h3 {
+  font-family: 'Nunito', sans-serif;
+  margin: 0 0 5px 0;
+}
+
+
+#reddit-logo {
+  max-height: 3em;
+  max-width: 3em;
 }
 
 ul {
@@ -11,16 +25,38 @@ ul li {
     margin: 0 1em 0 1em;
 }
 
+#description {
+  margin: 1em 0 2em 0;
+}
+
 .profile {
     max-width: 200px;
     max-height: 200px;
     border-radius: 100px;
-    border: solid 5px rgba(255, 0, 0, .5);
+    border: solid 5px rgba(92, 151, 171, .5);
+}
+
+.bg-info {
+  padding: 10% 10% 10% 10%;
+  height: 200px;
+  margin-top: 5px;
+}
+
+#profiles {
+  margin-top: 1em;
+}
+
+#profiles .lead {
+  margin-bottom: 3px;
 }
 
 .project-image {
     width: 100%;
     max-height: 500px;
+    margin-bottom: 2em;
+    border-top: solid 5px black;
+    border-bottom: solid 5px black;
+    border-style: ridge;
 }
 
 html {
@@ -39,8 +75,6 @@ body {
   height: 60px;
   background-color: #f5f5f5;
 }
-
-
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
